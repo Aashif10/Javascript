@@ -39,7 +39,7 @@ let array=[10,20,30,40]
 let array1=[...array];
 //console.log(array1);//10,20,30,40
 array1[4]=50;
-console.log(array);*/// it will not modify original array*/
+console.log(array);*/ // it will not modify original array*/
 
 /*
 //create copy of object
@@ -53,7 +53,7 @@ let object2={...object1}
 console.log(object2);
 console.log(object1);*/
 
- /*Spread operator
+/*Spread operator
 let array=[10,20,30,40,50,60]
 function spread(a,b,c){
     console.log(...array)
@@ -63,10 +63,27 @@ function spread(a,b,c){
 }
 spread(...array);*/
 
+/*
 // Rest Parameter can be used in array destructuring....
-let array=[1,20,30,40,50,60,70,80,90,100];
+let array=[10,20,30,40,50,60,70,80,90,100];
 let[a,b,c,...rest]=array;//array destructuring using Rest Parameter..
 console.log(a);
 console.log(b);
 console.log(c);
 console.log(...rest);
+console.log(...rest[3])*/
+
+/*
+//Reat Parameter can be used in object destructuring..
+let object1 = {
+  name: "Aashif",
+  age: 22,
+  city: "Noida",
+};
+let {...rest } = object1;
+console.log(name);
+console.log(age);
+console.log(city);
+console.log(rest);
+console.log(rest.city);
+*/
